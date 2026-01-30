@@ -142,30 +142,35 @@ Applied AI specialist with experience building intelligent systems from structur
       {Lead AI/ML Engineer}{Jan. 2024 -- Present}
       {Bosch Engineering GmbH}{Holzkirchen, Germany}
       \resumeItemListStart
-        \resumeItem{Leading technical development of organizing engineering artefacts (hierarchical requirements, code, test artefacts) for generating general purpose vector embeddings for downstream applications}
-        \resumeItem{Implemented a pdf importer application that extracts requirements text and attributes from requirement pdf files, shrinking 2 weeks of manual effort into few hours using Python, Segment Any Text, pdfminer, and LLM-based few-shot text classification}
-        \resumeItem{Implemented a Requirements Similarity Assistant performing semantic comparisons of new and legacy requirements to identify similarity and changes using Python, PySpark, Langchain, Pydantic, LLM integration, RAG, and Databricks}
-        \resumeItem{Contributed to automated pipeline to ingest requirements data from management tools into Databricks Lakehouse for analytics and AI processing}
-        \resumeItem{Conceptualized treating connected engineering artefacts as a heterogeneous information network to utilize Graph ML techniques with self-supervised contrastive learning}
+        \resumeItem{Leading technical development of capturing and organizing engineering artefacts together with their relationships as a data backbone to enable \textbf{GenAI powered agentic applications} for bringing productivity improvements in systems engineering processes}
+        \resumeItem{Architectured an \textbf{AI powered pdf-importer application} that extracts requirements text and requirement metadata from requirement pdf files and ingests them into a Databricks delta table. Utilised \textbf{AZURE AI Document Intelligence} for OCR and layout extraction, An \textbf{LLM based pipeline} for automotive requirement specific text classification}
+        \resumeItem{Introduced \textbf{user-in-the-loop for annotating a few shot examples for text classification} and using those examples to \textbf{fine-tune class descriptions with an LLM powered interactive prompt engineering system}}
+        \resumeItem{Implemented an alternative text classification method using \textbf{contextual bandits} that dynamically adapts to user feedback on classification results to improve classification accuracy over time. }                        
+        \resumeItem{Implemented an LLM powered Requirements Similarity Assistant performing semantic comparisons of new and legacy requirements to identify similarity and changes using \textbf{RAG techniques} with \textbf{vector embeddings} for retrieval and similarity comparison}
+        \resumeItem{Together with data engineering team, helped design \textbf{data pipelines and ETL processes} to ingest and process large volumes of requirements engineering data and created \textbf{bronze}, \textbf{silver}, and \textbf{gold delta tables in Databricks}.}
       \resumeItemListEnd
 
     \resumeSubheading
       {CV/ML Engineer}{Feb. 2018 -- Dec. 2023}
       {Bosch Engineering GmbH}{Holzkirchen, Germany}
       \resumeItemListStart
-        \resumeItem{Conceptualized, designed, and implemented a probabilistic graphical model predicting evolving height map of dump trucks during excavator loading, resulting in 45\% increase in average accuracy using Python, Matlab, and Bayesian methods}
-        \resumeItem{Designed data acquisition strategy and pipeline to collect time-synchronized data from LiDAR and vehicle kinematic sensors for AI model training}
-        \resumeItem{Engineered use case specific perception software algorithms with focus on accuracy and runtime performance using C++, Python, MATLAB, ROS, OpenCV, PCL, and Scikit-learn}
-        \resumeItem{Authored multiple invention reports and patents in perception and automation for off-road vehicles}
+        \resumeItem{Designed and developed a \textbf{probabilistic graphical model based generative AI algorithm}, predicting evolving height map of dump trucks during excavator loading, resulting in 45\% increase in average accuracy using Python, Matlab, and Bayesian methods. The method used LiDAR point cloud and vehicle kinematic data and vehicle signals as inputs to predict height profile of load on truck bed.}
+        \resumeItem{Designed and developed a \textbf{boltzmann network based deep neural network model} to extract and locate partially buried excavator bucket in 3D LiDAR point cloud data and excavator kinematic data.}
+        \resumeItem{Designed and developed a bucket fill level estimation algorithm using geometric segmentation and \textbf{DBSCAN clustering algorithm} to segment 3D LiDAR points belonging to bulk material in excavator bucket and estimte fill level using 3D regression technique.}
+        \resumeItem{Designed and developed a soil poil identification algorithm from 3D LiDAR point cloud data by defining a height threshold and classifying points above and below into a binary image and using \textbf{connected component analysis} to identify soil piles.}
+        \resumeItem{Designed and developed a dump truck identification algorithm from 3D LiDAR point cloud data using \textbf{RANSAC based plane fitting} to identify truck bed plane.}
+        \resumeItem{Designed and developed a algorithm using \textbf{support vector machines} to classify reachability of a 3D point in space by an ecavator's tool tip.}
+        \resumeItem{Designed and developed excavator \textbf{kinematics tree} and \textbf{inverse kinematics tree} models from joint angle sensor data and LiDAR mounting position using \textbf{MATLAB} and \textbf{Linear Algebra Methods} and performed coordinate transformations from one frame to another for LiDAR data processing.}
+        \resumeItem{Designed and developed overlay visualisation of Radar and Ultra sound detected obstacles on different view images (Birds eye, rear view, side view) of a surround camera system using \textbf{ROS} for receiving sensor data and \textbf{OpenCV} for image processing. }
+        \resumeItem{Filled \textbf{11 patents} related to the development of the above algorithms and received a \textbf{Bosch Inventor Award}.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Software Engineer}{Jun. 2015 -- Jan. 2018}
       {Bosch Engineering K.K}{Yokohama, Japan}
       \resumeItemListStart
-        \resumeItem{Engineered software modules ensuring compliance with project requirements and quality guidelines using Matlab/Simulink, C, and C++}
+        \resumeItem{Adapted and developed control algorithms for engine exhaust gas treatment systems to meet stringent emission norms using MATLAB/Simulink, ASCET and C}
         \resumeItem{Automated the process of defining AUTOSAR definitions from network definition files, reducing manual effort by 70\% using Python}
-        \resumeItem{Earned the Bosch Inventor Award for an invention report on identification of road conditions using in-vehicle sensor data}
         \resumeItem{Led review process to enhance team performance and software reliability while maintaining traceability across development artifacts}
       \resumeItemListEnd
 
@@ -173,7 +178,7 @@ Applied AI specialist with experience building intelligent systems from structur
       {Software Engineer}{Aug. 2006 -- Mar. 2015}
       {Robert Bosch Engineering and Business Solutions Ltd}{Bangalore, India}
       \resumeItemListStart
-        \resumeItem{Engineered basis software modules for active safety systems adhering to quality guidelines and project standards using C and C++}
+        \resumeItem{Developed and adapted bootloader, CAN, Diagnositics and hardware related software modules for automotive ECUs based on AUTOSAR standards using C}
         \resumeItem{Maintained traceability between software development artifacts to optimize documentation and workflow}
         \resumeItem{Provided technical leadership during review process and facilitated cross-functional collaboration}
       \resumeItemListEnd
@@ -189,7 +194,6 @@ Applied AI specialist with experience building intelligent systems from structur
           \resumeItemListStart
             \resumeItem{Developed an intelligent survey creation agent using OpenAI GPT-4 LLM and LlamaIndex that automatically generates contextual surveys based on user prompts and document attachments}
             \resumeItem{Implemented multi-agent orchestration system with vector embeddings for document retrieval, automated question generation, and web search integration for research-backed questions}
-            \resumeItem{Containerized the application using Docker for seamless deployment, enabling dynamic survey creation through conversational AI interactions}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://github.com/jettyindeepl/BYOC}{BYOC - Build Your Own Classifier}} $|$ \emph{Python, OpenAI GPT-4, Few-Shot Learning}}{}
@@ -207,7 +211,7 @@ Applied AI specialist with experience building intelligent systems from structur
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Programming Languages}{: Python, C, C++, SQL, MATLAB} \\
+     \textbf{Programming Languages}{: Python, C, C++, MATLAB} \\
      \textbf{AI Libraries}{: PyTorch, Scikit-learn, Langchain, OpenCV, PCL, LlamaIndex} \\
      \textbf{Platforms \& Tools}{: Databricks, PySpark, ROS, Git, Docker, VS Code} \\
      \textbf{AI Methodologies}{: Machine Learning, Deep Learning, Probabilistic Graphical Models, Graph ML, Reinforcement Learning, RAG, Agentic AI}
@@ -221,26 +225,6 @@ Applied AI specialist with experience building intelligent systems from structur
      \textbf{Tamil}{: Native} $|$ \textbf{English}{: C2} $|$ \textbf{Japanese}{: B2} $|$ \textbf{German}{: A2}
     }}
  \end{itemize}
-
-%-----------PATENTS-----------
-\section{Patents}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{3D Height Profile of Load on Loading Area}}{Filed Mar. 2024 | \href{https://patents.google.com/patent/DE102024202648A1/en}{DE102024202648A1}}
-          \resumeItemListStart
-            \resumeItem{ML-based method to accurately measure how new load affects height of existing load on surface, crucial for stability and safety}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Process Control via Grab Bucket Excavator}}{Filed May 2020 | \href{https://patents.google.com/patent/DE102020206371A1/en}{DE102020206371A1}}
-          \resumeItemListStart
-            \resumeItem{Method using advanced optical sensors to analyze shape and height of bulk material for precise control of excavator's bucket}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Driving-Obstacle Detecting Device}}{Filed Mar. 2018 | \href{https://patents.google.com/patent/EP3637385A1/en}{JP6866479B2}}
-          \resumeItemListStart
-            \resumeItem{Vehicle system to identify obstacles on road ahead, providing timely alerts about potential hazards}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
 
 %-----------CERTIFICATIONS-----------
 \section{Certifications}
